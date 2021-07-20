@@ -6,48 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css1/new.css">
-    <script defer src="../js/scripts.js"></script>
+    <script defer src="../js/home.js"></script>
 </head>
 <body>
+    <div class="main-container">
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">The Degenerate's Club</h1>
+                <div id="menu-container">
+                    <img src="../img/Menu.png" 
+                         alt="menu icon"
+                         id="menu">
+                </div>
+                <nav class="header-nav"></nav>
+                </nav>
+            </header>
+        </div>
+        <ul id="nav-menu">
+            <li><a href="../test/test.html">Home</a></li>  
+            <li><a href="../blogs/blogs.html">Blogs</a></li>
+            <li><a href="../about/about.html">About Us</a></li>
+            <li><a href="../picks/picks.html">Picks of the day</a></li>
+            <li><a href="../podcast/podcast.html">Podcast</a></li>
+         </ul>
+    </div>
 
-  <div class="header-container">
-      <header class="wrapper clearfix">
-          <h1 class="title">The Degenerate's Club</h1>
-          <nav>
-              <ul>
-                  <li><a href="nindex1.html">Home</a></li>  
-                  <li><a href="blogs/blogs.html">Blogs</a></li>
-                  <li><a href="about/about.html">About Us</a></li>
-                  <li><a href="shop/shop.html">Shop</a></li>
-                  <li><a href="podcast/podcast.html">Podcast</a></li>
-              </ul>
-          </nav>
-      </header>
-  </div>
 
-  <div class="main-container">
-      <div class="main wrapper clearfix">
-
-        <article>
+    <header>
           <h1>About The Degenerate's Club Writers</h1>
-        
-          <!-- <img src="img/fenway.jpg" alt="Fenway Park">  -->
-          <div class="row">		
-          <p><strong>Click on a blogger to learn more</strong></p>
-          <button type="button" onclick="alert('Hello world!')" class="nick" >Nick Watson</button>
-          <button type="button" onclick="alert('Hello world!')"class="ed">Ed Emily</button>
-          <button type="button" onclick="alert('Hello world!')"class="captain">Captain Crypto</button>
-          </div>
-        </article>
+    </header>
+     
+        <main>
+            <div class="column" id="column-1">
+                <div class="row">		
+                    <p><strong>Click on a blogger to learn more</strong></p>
+                    <button type="button" onclick="alert('Hello world!')" class="nick" >Nick Watson</button>
+                    <button type="button" onclick="alert('Hello world!')"class="ed">Ed Emily</button>
+                    <button type="button" onclick="alert('Hello world!')"class="captain">Captain Crypto</button>
+                    </div>
+                </div>
+            <aside>
+                <h3>aside</h3>
+                <p> I hope that a study of very long sentences will arm you with strategies that are almost as diverse as the sentences themselves, such as: starting each clause with the same word, tilting with dependent clauses toward a revelation at the end, padding with parentheticals, showing great latitude toward standard punctuation, rabbit-trailing away from the initial subject, encapsulating an entire life, and lastly, as this sentence is, celebrating the list.</p>
+            </aside>
+        </main>  
 
-      </div> <!-- #main -->
-  </div> <!-- #main-container -->
-
-  <div class="footer-container">
-      <footer class="wrapper">
-          <h3>footer</h3>
-      </footer>
-  </div>
-
+        <footer>Follow us on: 
+            
+            <div class="footer.wrapper">
+                <a target='_blank' href='https://www.facebook.com/The-Degenerates-Club-100551615651209'>
+                <img src='../img/facebook.png' alt='Facebook'/></a>
+                <a target='_blank' href='https://twitter.com/ClubDegenerates'>
+                    <img src='../img/twitter.png' alt='Facebook'/></a>
+                    <a target='_blank' href='https://www.instagram.com/thedegeneratesclubpicks/'>
+                        <img src='../img/Instagram.png' alt='Facebook'/></a>
+            </div>
+            </footer>   
+  
+    </div>
 </body>
 </html>
