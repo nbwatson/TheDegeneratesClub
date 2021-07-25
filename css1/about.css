@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+.header-container {
+  border: 12px solid #494949;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #294969;
+  /* background-image: url(../img/money1.jpg);  ---taking image out 24Jul21 */
+}
+
+.title {
+  font-size:  2em; 
+  text-align: center;
+  color:  rgba(173, 212, 210, 0.842);
+  font-weight: bolder;
+  text-shadow:  0.07em 0 rgb(8, 125, 221), 0 0.07em whitesmoke, -0.07em 0 greenyellow, 0 -0.07em rgb(0, 0, 0);
+  font-family: Times, "Times New Roman", Georgia, serif;
+  letter-spacing: .12em;
+  line-height: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(225, 231, 225);
+  /* background-color: rgb(219, 243, 219); -- old background 24Jul21 */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Helvetica, Helvetica Neue, Arial;
+  font-size: 1em;
+  line-height: 26px;
+}
+
+/* navigation menu */
+#nav-menu {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: all 1s ease-out;    
+}
+
+#nav-menu li {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+}
+
+#nav-menu li a {
+  padding: 6px 12px;
+  border: 2.5px solid rgb(0, 0, 0);
+  width: 100%;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background: #e9aa6f;
+  border-radius: 10px/20px;
+}   
+
+#nav-menu li a:hover {
+  color: rgba(0, 0, 0, 0.767);
+  border: 5px solid rgb(226, 255, 63);
+  background-color: rgba(122, 120, 120, 0.726);
+}
+
+#menu-container {
+  display: block;
+  margin-left: auto;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  background-color: rgb(219, 243, 219);
+  margin: 15px;
+}
+
+/*tab styling*/
+.container{
+  margin: 3%;
+  width: 105%;
+  padding: 10px 5% 10px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  flex-direction: row;
+}
+
+.tab-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px 1.4%;
+  font-size: .8em;
+  background-color: rgb(211, 205, 205);
+  height: auto;
+  border-right: 1px solid #d1d1d1;
+  
+}
+
+.tab-cont button{
+  width: 32%;
+  background-color: mintcream;
+  padding: 18px;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.tab-cont button:hover{
+  background-color: rgba(185, 157, 218, 0.986);
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tab-content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: whitesmoke;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tab-content h3{
+  font-size: 3em;
+  font-weight: 400;
+  margin: 20px 0 10px 0;
+  text-decoration: black underline 3px
+}
+.tab-content p{
+  font-weight: 100;
+  color: #666;
+  margin-top: 20px
+}
+.tab-cont .but.active{
+  background-color: #b4b4b4;
+}
+@keyframes anime {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+button {
+  padding: 1rem;
+  background-color: #999;
+  border: 2px solid;
+  border-radius: 0.3rem;
+}
+
+h3{
+  font-size: 2.2em;
+  color: green;
+  text-align: center;
+  margin: auto;
+}
+
+aside {
+  color: rgb(3, 3, 3);
+  padding: 10px 5% 10px;
+  border-top: 20px solid #e99d7fa6;
+  background: #a5f0ce;
+  margin: 3%;
+}
+h4{
+  font: 1.18em;
+  text-align: center;
+}
+
+/* Footer*/
+
+footer {
+  font-size:  1.18em ; 
+  text-align: center;
+  color:  rgba(173, 212, 210, 0.842);
+  font-weight: bolder;
+  text-shadow:  0.07em 0 rgb(8, 125, 221), 0 0.07em whitesmoke, -0.07em 0 greenyellow, 0 -0.07em rgb(0, 0, 0);
+  font-family: Times, "Times New Roman", Georgia, serif;
+  letter-spacing: .12em;
+  border-top: 20px solid #000;
+  border: 12px solid #494949;
+  background-color: #294969;
+  display: flex;
+  justify-content: center;
+}
+
+.footer.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: right;
+  flex-direction: column;
+  display: flex;
+}
+
+article{
+  text-align: left;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+a img {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+}
+
+
+
+
+/*************************
+Clearfix
+*************************/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+
+
+/*************************
+Media Query
+*************************/
+
+/* Descktop view */
+
+@media screen and (min-width: 800px) {
+.title {
+  font-size:  2.8em; 
+}
+
+main {
+    flex-direction: row;
+}
+aside {
+    float: right;
+    width: 28%;
+  margin: 1%;
+  }
+.column {
+    width: 65%;
+}
+
+/* navigation menu */
+  #nav-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+#nav-menu li a {
+  max-width: 200px;
+  border-radius: 70% / 0 0 70% 70%;    
+  font-size: 1em;
+}
+
+
+#menu-container {
+  display: none;
+}
+
+/* Tab Layout*/
+.container{
+  width: 70%;
+  margin: auto;
+  overflow:hidden;
+  border: 1px solid #d1d1d1;
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 1rem;
+  max-width: 700px;  
+  padding: 0;
+}
+.tab-cont {
+  float: left;
+  width: 30%;
+  background-color: rgb(211, 205, 205);
+  height: 100%;
+  border-right: 1px solid #d1d1d1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 1.4%;
+  font-size: .8em;
+}
+.tab-cont button {
+  width: 100%;
+  background-color: mintcream;
+  padding: 18px;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.tab-cont button:hover { 
+  background-color: rgba(185, 157, 218, 0.986);
+}
+.tab-content{
+  height: 100%;
+  float: left;
+  padding: 20px;
+  width: 70%;
+  animation: anime 1s; 
+}
+
+.tab-content h3{
+  font-size: 3em;
+  font-weight: 400;
+  margin: 20px 0 10px 0;
+  text-decoration: black underline 3px
+}
+.tab-content p{
+  font-weight: 100;
+  color: #666;
+  margin-top: 20px
+}
+.tab-cont .but.active{
+  background-color: #b4b4b4;
+}
+@keyframes anime {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+/*footer*/
+
+article{
+  font-size:  2.18em ; 
+}
+a{
+  width: 10%;
+  height: auto;
+}
+}
+
+

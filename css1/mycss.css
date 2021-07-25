@@ -37,8 +37,7 @@ article{
     text-shadow:  0.07em 0 rgb(8, 125, 221), 0 0.07em whitesmoke, -0.07em 0 greenyellow, 0 -0.07em rgb(0, 0, 0);
     font-family: Times, "Times New Roman", Georgia, serif;
     letter-spacing: .12em;
-    line-height: normal;
-    margin: auto;
+    line-height: normal
   }
   
 main {

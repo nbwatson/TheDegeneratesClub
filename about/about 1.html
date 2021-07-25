@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links to css, fonts, all kind of styles -->
+    <link rel="stylesheet" href="../css1/normalize.css">
+    <link rel="stylesheet" href="../css1/about.css">
+    <script defer src="../js/About.js"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="../css1/new.css">
-    <script defer src="../js/home.js"></script>
+
 </head>
 <body>
     <div class="main-container">
@@ -33,28 +36,37 @@
 
 
     <header>
-          <h1>About The Degenerate's Club Writers</h1>
+          <h2>About The Degenerate's Club Writers</h2>
     </header>
      
-        <main>
-            <div class="column" id="column-1">
-                <div class="row">		
-                    <p><strong>Click on a blogger to learn more</strong></p>
-                    <button type="button" onclick="alert('Hello world!')" class="nick" >Nick Watson</button>
-                    <button type="button" onclick="alert('Hello world!')"class="ed">Ed Emily</button>
-                    <button type="button" onclick="alert('Hello world!')"class="captain">Captain Crypto</button>
-                    </div>
-                </div>
+        <main> <div class="container">
+                <!-- table for information for the group 24Jul21 -->
+            <div class="tab-cont">
+                <button class="but" onclick="blogger(event, 'nick')">Nick</button>
+                <button class="but" onclick="blogger(event, 'ed')">Ed</button>
+                <button class="but" onclick="blogger(event, 'captain')">Captain Crypto</button>
+            </div>
+            <div class="tab-content" id="nick">
+                <h3>Nick</h3>
+                <p>Main Degenerate</p>
+            </div>
+            <div class="tab-content" id="ed">
+                <h3>Ed</h3>
+                <p>Horse enthusist</p>
+            </div>
+            <div class="tab-content" id="captain">
+                <h3>Captain Crypto</h3>
+                <p>mans most intersting man</p>
+            </div>
+        </div>
             <aside>
-                <h3>aside</h3>
+                <h4>aside</h4>
                 <p> I hope that a study of very long sentences will arm you with strategies that are almost as diverse as the sentences themselves, such as: starting each clause with the same word, tilting with dependent clauses toward a revelation at the end, padding with parentheticals, showing great latitude toward standard punctuation, rabbit-trailing away from the initial subject, encapsulating an entire life, and lastly, as this sentence is, celebrating the list.</p>
             </aside>
         </main>  
-
-        <footer>Follow us on: 
-            
-            <div class="footer.wrapper">
-                <a target='_blank' href='https://www.facebook.com/The-Degenerates-Club-100551615651209'>
+        <div class="footer.wrapper">
+            <footer> <article> Follow us on: </article>            
+            <a target='_blank' href='https://www.facebook.com/The-Degenerates-Club-100551615651209'>
                 <img src='../img/facebook.png' alt='Facebook'/></a>
                 <a target='_blank' href='https://twitter.com/ClubDegenerates'>
                     <img src='../img/twitter.png' alt='Facebook'/></a>

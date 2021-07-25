@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+br {
+  line-break: auto;
+}
 
 html {
   color: #222;
@@ -49,6 +52,8 @@ main {
   padding-bottom: 30px;
 }
 
+
+
 button {
   padding: 1rem;
   background-color: #999;
@@ -76,6 +81,7 @@ button:hover {
     flex-direction: column;
     column-gap: normal;
     margin: 20px;
+    font-size: 1.5rem;
 }   
 
 #column-1 {
@@ -106,7 +112,7 @@ footer.wrapper {
 /* navigation menu */
 #nav-menu {
   list-style: none;
-  margin-left: 0;
+  margin:auto;
   padding-left: 0;
   display: none;
   flex-direction: column;
@@ -131,10 +137,10 @@ footer.wrapper {
   border-bottom: 2px solid red;
   width: 100%;
   display: block;
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   text-align: center;
-  background: #9a7859;
+  background: #b2b8ee9d;
 }   
 
 #nav-menu li a:hover {
@@ -182,7 +188,7 @@ Clearfix
 aside {
   color: rgb(3, 3, 3);
   padding: 10px 5% 10px;
-  border-top: 20px solid #b7ebc3;
+  border-top: 20px solid #e99d7fa6;
   background: #a5f0ce;
 
 }
@@ -210,6 +216,7 @@ Media Query
    #nav-menu {
       display: flex;
       flex-direction: row;
+      margin-top: 1em;
   }
 
   #nav-menu li a {
