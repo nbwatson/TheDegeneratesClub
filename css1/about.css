@@ -312,9 +312,10 @@ aside {
   margin: auto;
   overflow:hidden;
   border: 1px solid #d1d1d1;
-  height: 300px;
+  height: auto;
   margin-top: 20px;
   margin-left: 1rem;
+  margin-bottom: 20px;
   max-width: 700px;  
   padding: 0;
 }
@@ -327,7 +328,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 0 1.4%;
+  padding: 20px 1.4%;
   font-size: .8em;
 }
 .tab-cont button {
@@ -361,6 +362,10 @@ aside {
 }
 .tab-cont .but.active{
   background-color: #b4b4b4;
+}
+
+.but{
+  justify-content: space-between;
 }
 @keyframes anime {
   from{opacity: 0}
