@@ -1,0 +1,76 @@
+
+// Finding navigation buttons
+const menuButton = document.getElementById('menu-container');
+const listItems = document.getElementById('list-items'); //entry point for list items
+const navMenu = document.getElementById('nav-menu');
+
+// Perform actions on click event
+
+menuButton.addEventListener("click", showNavMenuOnClick);
+
+
+
+// Function definitions
+
+function showNavMenuOnClick() {
+    if(!navMenu.style.display) { // equal to (navMenu.style.display === '')
+        navMenu.style.display = 'flex'
+    } else {
+        navMenu.style.display = '';
+    }
+}
+
+
+//calculator functions
+
+// assigning the inputs
+let betInput = Number(prompt('bets'));
+let oddsInput = Number(prompt('odds'));
+
+
+
+// Functions for math equations 
+let totalWinningsResult;
+
+if ( oddsInput >=  100) { totalWinningsResult = ((( oddsInput / 100 ) * betInput ) + betInput );
+}
+else if (parseFloat(oddsInput) <=  parseFloat(-100) ) { totalWinningsResult = ( (( 100 / Math.abs(oddsInput) ) * betInput ) + betInput );
+}
+
+let profitResult;
+
+if ( oddsInput >=  100) { profitResult = ( (( oddsInput / 100 ) * betInput ) );
+}
+else if (parseFloat(oddsInput) <=  parseFloat(-100) ) { profitResult = ( (( 100 / Math.abs(oddsInput) ) * betInput ) );
+}
+
+var n = totalWinningsResult.toFixed(2)
+var i = profitResult.toFixed(2)
+
+//Printing to the Console log
+console.log(`${n}`);
+console.log(`${i}`);
+
+//uploading the results to HTML
+document.getElementById('winning').innerHTML += `${n}`;
+document.getElementById('profit').innerHTML += `${i}`;
+document.getElementById('betsEntered').innerHTML += `${betInput}`;
+document.getElementById('oddsEntered').innerHTML += `${oddsInput}`;
+
+
+// Buttons for refresh
+const actionButton = document.getElementById('button');
+actionButton.addEventListener("click", myFunction);
+
+
+//function for Refresh button and close out of window.
+var calculator;
+
+function openpicks() {
+    calculator = window.open("/Users/nickwatson/Documents/FinalProject/The-Degenerates-Club/picks/picks.html");
+   }
+
+function myFunction(){
+    location.reload(true);
+}
+

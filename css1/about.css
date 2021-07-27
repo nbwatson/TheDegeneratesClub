@@ -166,7 +166,7 @@ main {
   font-size: 3em;
   font-weight: 400;
   margin: 20px 0 10px 0;
-  text-decoration: black underline 3px
+  text-decoration:  underline black  3px;
 }
 .tab-content p{
   font-weight: 100;

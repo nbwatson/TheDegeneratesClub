@@ -20,4 +20,12 @@ function showNavMenuOnClick() {
     }
 }
 
+//Calculator window 
 
+var calculator; 
+function openCalculator() {
+   calculator = window.open("/Users/nickwatson/Documents/FinalProject/The-Degenerates-Club/picks/cal.html");
+  }
+  function closeCalculator() {
+    calculator.close();
+  }

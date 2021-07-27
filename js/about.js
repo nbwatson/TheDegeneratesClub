@@ -37,3 +37,21 @@ function blogger(e, bloggerName) {
     document.getElementById(bloggerName).style.display = 'block';
     e.currentTarget.classList.add('active');
 }
+
+function validateForm() {
+    var x = document.forms["contactForm"]["visitor_name"].value;
+    var y = document.forms["contactForm"]["visitor_lastName"].value;
+    var z = document.forms["contactForm"]["visitor_email"].value;
+    if (x == "") {
+      alert("First name must be filled out");
+      return false;
+    }
+    else if (y == "") {
+        alert("Last name must be filled out");
+        return false;
+      }
+    else if (z == "") {
+        alert("Email must be filled out");
+        return false;
+      }
+  }
