@@ -24,17 +24,22 @@ function showNavMenuOnClick() {
 //calculator functions
 
 // assigning the inputs
-let betInput = Number(prompt('bets'));
-let oddsInput = Number(prompt('odds'));
+let betInput = Number(prompt('bets', ['Please enter your bet amount']));
+let oddsInput = Number(prompt('odds', ['Please enter your odds amount']));
 
 
 
 // Functions for math equations 
 let totalWinningsResult;
 
-if ( oddsInput >=  100) { totalWinningsResult = ((( oddsInput / 100 ) * betInput ) + betInput );
+if ( oddsInput >=  100) { 
+    totalWinningsResult = ((( oddsInput / 100 ) * betInput ) + betInput );
 }
-else if (parseFloat(oddsInput) <=  parseFloat(-100) ) { totalWinningsResult = ( (( 100 / Math.abs(oddsInput) ) * betInput ) + betInput );
+else if (parseFloat(oddsInput) <=  parseFloat(-100) ) { 
+    totalWinningsResult = ( (( 100 / Math.abs(oddsInput) ) * betInput ) + betInput );
+}
+else if( (oddsInput <=  100) || parseFloat(oddsInput) >=  parseFloat(-100) ) {
+    alert("Sorry, Invalid entry please enter odds greater than +100 or less than -100");
 }
 
 let profitResult;

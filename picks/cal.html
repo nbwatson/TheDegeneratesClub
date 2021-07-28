@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- links to css, fonts, all kind of styles -->
     <link rel="stylesheet" href="../css1/normalize.css">
-    <link rel="stylesheet" href="../css1/blog.css">
+    <link rel="stylesheet" href="../css1/cal.css">
     <script defer src="cal.js"></script>
     <title>Document</title>
 </head>
@@ -37,33 +37,41 @@
         </header>
         <main>
             <div class="column" id="column-1"> 
-              <p>Figure out your total winnings and profits for each bet </p>
+                <p>Figure out your total winnings and profits for each bet </p>
+
               <section id="results">
-                    <div id="value"> <output id="winning">$</output></div>
+
+                    <div id="value">Total winning<output id="winning"> $</output></div>
                     <ul id="list-items">
                     </ul>        
-                    <div id="value"> <output id="profit">$</output></div>
+                    <div id="value">Total Profit<output id="profit"> $</output></div>
                     <ul id="list-items">
                     </ul>
-                    <div id="value"> <output id="betsEntered">$</output></div>
+                    <div id="value"> Bet amount <output id="betsEntered"> $</output></div>
                     <ul id="list-items">
                     </ul>        
-                    <div id="value"> <output id="oddsEntered"></output></div>
-                    <ul id="list-items">
-                        <a href="/Users/nickwatson/Documents/FinalProject/The-Degenerates-Club/picks/picks.html"><button type="button" id="button" class="button">Go back to Picks</button></a>
+                    <div id="value">Betting Odds<output id="oddsEntered"></output></div>
+                    <ul id="cal-btn1">
+                <a href="/Users/nickwatson/Documents/FinalProject/The-Degenerates-Club/picks/picks.html"><button type="button" id="button" class="button">Go back to Picks</button></a>
                 <button onclick="window.location.href='cal.html'">Reset</button>
-            
+                    </ul>
                 </section>
             </div>    
+        <div>  
+            <ul id="cal-btn2">
+                <a href="/Users/nickwatson/Documents/FinalProject/The-Degenerates-Club/picks/picks.html"><button type="button" id="button" class="button">Go back to Picks</button></a>
+                <button onclick="window.location.href='cal.html'">Reset</button>
+                    </ul>
+                </div>  
         </main>  
         <div class="footer.wrapper">
             <footer> 
                 <article> Follow us on: </article>            
-                    <a target='_blank' href='https://www.facebook.com/The-Degenerates-Club-100551615651209'>
+                    <a class="media" target='_blank' href='https://www.facebook.com/The-Degenerates-Club-100551615651209'>
                         <img src='../img/facebook.png' alt='Facebook'/></a>
-                    <a target='_blank' href='https://twitter.com/ClubDegenerates'>
+                    <a class="media" target='_blank' href='https://twitter.com/ClubDegenerates'>
                         <img src='../img/twitter.png' alt='Facebook'/></a>
-                    <a target='_blank' href='https://www.instagram.com/thedegeneratesclubpicks/'>
+                    <a class="media" target='_blank' href='https://www.instagram.com/thedegeneratesclubpicks/'>
                         <img src='../img/Instagram.png' alt='Facebook'/></a>
             </footer>  
         </div>

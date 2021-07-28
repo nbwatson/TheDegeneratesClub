@@ -224,6 +224,10 @@ clear: both;
 Media Query
 *************************/
 
+/* tablet view */
+  @media only screen and (min-width: 600px) {
+
+}
 /* Descxktop view */
 
 @media screen and (min-width: 800px) {
