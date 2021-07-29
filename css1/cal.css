@@ -129,6 +129,7 @@ main {
 
 #results{
     border: 3px solid black;
+    width: 100%;
 }
     
 #value{
@@ -227,6 +228,13 @@ Media Query
         flex-grow: inherit;
         flex-direction: column-reverse;
 }
+#cal-btn1{
+    position: inherit;
+    flex-flow: inherit;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+}
 }
 
 /* Descxktop view */
@@ -244,6 +252,8 @@ main {
 
 p {
     padding-top: 0;
+    font-size: 2em;
+    line-height: 1.2em;
 }
 
 aside {
