@@ -3,7 +3,7 @@ box-sizing: border-box;
 }
 html {
 color: #222;
-font-size: 1em;
+font-size: 1rem;
 line-height: 1.4;
 box-sizing: border-box;
 }
@@ -17,7 +17,7 @@ display: flex;
 flex-direction: column;
 height: 100vh;
 font-family: Helvetica, Helvetica Neue, Arial;
-font-size: 1em;
+font-size: 1rem;
 line-height: 26px;
 }
 
@@ -91,6 +91,7 @@ display: block;
 margin-left: auto;
 }
 
+/* main content area */
 
 main {
 display: flex;
@@ -116,7 +117,6 @@ width: 100%;
     padding: 1rem;
     flex-direction: column;
     column-gap: normal;
-    margin: 20px;
     font-size: 1.2rem;
     border-radius: 120px  ;
 
@@ -167,13 +167,16 @@ width: inherit;
     text-decoration:  underline black  3px;
 }
 
+.column2{
+    border: 5px solid black;
+}
 
 aside {
     color: rgb(3, 3, 3);
     padding: 10px 5% 10px;
     border-top: 20px solid #e99d7fa6;
     background: #a5f0ce;
-    margin-top: 2em;
+    margin: 2em;
 }
 h3{
     font-size: 2.5em;
@@ -242,6 +245,14 @@ Clearfix
 Media Query
 *************************/
 
+/* tablet view */
+@media only screen and (min-width: 600px) {
+#column2{
+    
+}
+
+}
+
 /* Descxktop view */
 
 @media screen and (min-width: 800px) {
@@ -251,19 +262,21 @@ Media Query
 
     main {
         flex-direction: row;
-        border-radius: 100px  ;
+        border-radius: 100px;
 
     }
     aside {
         float: right;
-        width: 28%;
-    margin: 1%;
+        margin: 1%;
     }
     .column {
-        width: 65%;
         height: auto;
         border-radius: 15px;
     }
+
+p {
+    flex-wrap: wrap;
+}
 
     /* navigation menu */
     #nav-menu {
