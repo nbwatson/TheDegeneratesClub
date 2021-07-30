@@ -210,32 +210,29 @@ Clearfix
   *zoom: 1;
 }
 
+
 /*************************
 Media Query
 *************************/
 
-  /*************************
-  Media Query
-  *************************/
-
-  /* tablet view */
-  @media only screen and (min-width: 600px) {
-    .title {
-      font-size:  2.8em; 
-    }
-    main {
-      display: flex;
-      align-items: baseline;
-      flex-wrap: wrap;
-      flex-direction: initial;
-      margin: 8px;
-    }
-.box{
+/* tablet view */
+@media only screen and (min-width: 600px) {
+  .title {
+    font-size:  2.8em; 
+  }
+  main {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: initial;
+    margin: 8px;
+  }
+  .box{
   display: flex;
     flex-direction: row;
     margin: 10px;
     flex-wrap: wrap;
-}
+  }
     aside {
       width: auto;
       padding-bottom: 15px;
@@ -267,14 +264,14 @@ Media Query
       width: 100%;
   }
   
-.t-list1{
+  .t-list1{
   font-size: .75em;
   width: fit-content;
   text-align: center;
   display: flex;
   flex-direction: column;
   padding: 0;
-}
+  }
 }
 
 

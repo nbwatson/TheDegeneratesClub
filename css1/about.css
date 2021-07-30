@@ -15,9 +15,7 @@ body {
   font-family: Helvetica, Helvetica Neue, Arial;
   font-size: 1em;
   line-height: 26px;
-
 }
-
 
 .header-container {
   border: 12px solid #494949;
@@ -204,6 +202,7 @@ p {
   margin: 20px 0 10px 0;
   text-decoration:  underline black  3px;
 }
+
 .tab-content p{
   font-weight: 100;
   color: #666;
@@ -316,118 +315,124 @@ Media Query
 /* Desktop view */
 
 @media screen and (min-width: 600px) {
-  .container {
-    flex-direction: row;
-    width: 100%;
-    padding-bottom: 10px;
-    flex-wrap: wrap;
-}
-#column-2 {
-  width: 40%;
-  display: flex;
-  padding-right: 10px;
-}
+    .container {
+      flex-direction: row;
+      width: 100%;
+      padding-bottom: 10px;
+      flex-wrap: wrap;
+  }
+  #column-2 {
+    width: 40%;
+    display: flex;
+    padding-right: 10px;
+  }
 
-.aside {
-  width: 60%;
-  height: 100%;
-  display: flex;
-}
+  .aside {
+    width: 60%;
+    height: 100%;
+    display: flex;
+  }
 }
 /* Descktop view */
 
 @media screen and (min-width: 800px) {
-.title {
-  font-size:  2.8em; 
-}
+  .title {
+    font-size:  2.8em; 
+  }
 
-main {
-  align-items: center;
-}
-#column-2 {
-  width: 40%;
-  display: flex;
-  padding-right: 10px;
-  height: 100%;
-}
+  main {
+    align-items: center;
+  }
+  #column-2 {
+    width: 40%;
+    display: flex;
+    padding-right: 10px;
+    height: 100%;
+  }
 
-.column {
-    width: 65%;
-}
+  .column {
+      width: 65%;
+  }
 
-/* navigation menu */
+  /* navigation menu */
   #nav-menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
   }
-#nav-menu li a {
-  max-width: 200px;
-  border-radius: 70% / 0 0 70% 70%;    
-  font-size: 1em;
-}
+  #nav-menu li a {
+    max-width: 200px;
+    border-radius: 70% / 0 0 70% 70%;    
+    font-size: 1em;
+  }
 
-#menu-container {
-  display: none;
-}
+  #menu-container {
+    display: none;
+  }
 
-/* Tab Layout*/
+  /* Tab Layout*/
 
-.container{
-  flex-wrap: nowrap;
-}
+  .container{
+    flex-wrap: nowrap;
+  }
 
-.tab-cont .section {
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 0px
-}
+  .tab-cont .section {
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0px
+  }
 
-.tab-cont button {
-  width: 100%;
-  padding: 18px;
-}
-.tab-cont button:hover { 
-  background-color: rgba(185, 157, 218, 0.986);
-}
-.tab-content{
-  padding: 20px;
-  width: 100%;
-  animation: anime 1s;}
+  .tab-cont button {
+    width: 100%;
+    padding: 18px;
+  }
 
-.tab-content h3{
-  font-size: 3em;
-  font-weight: 400;
-  margin: 20px 0 10px 0;
-  text-decoration: black underline 3px
-}
-.tab-content p{
-  font-weight: 100;
-  color: #666;
-  margin-top: 20px
-}
-.tab-cont .but.active{
-  background-color: #b4b4b4;
-}
+  .tab-cont button:hover { 
+    background-color: rgba(185, 157, 218, 0.986);
+  }
 
-.but{
-  justify-content: space-between;
-}
-@keyframes anime {
-  from{opacity: 0}
-  to{opacity: 1}
-}
+  .tab-content{
+    padding: 20px;
+    width: 100%;
+    animation: anime 1s;}
 
-/*footer*/
+  .tab-content h3{
+    font-size: 3em;
+    font-weight: 400;
+    margin: 20px 0 10px 0;
+    text-decoration: black underline 3px
+  }
 
-span{
-  font-size:  2.18em ; 
-}
-a{
-  width: 10%;
-  height: auto;
-}
+  .tab-content p{
+    font-weight: 100;
+    color: #666;
+    margin-top: 20px
+  }
+
+  .tab-cont .but.active{
+    background-color: #b4b4b4;
+  }
+
+  .but{
+    justify-content: space-between;
+  }
+  @keyframes anime {
+    from{opacity: 0}
+    to{opacity: 1}
+  }
+
+  /*footer*/
+
+  span{
+    font-size:  2.18em ; 
+  }
+
+  a{
+    width: 10%;
+    height: auto;
+  }
+
 }
 
 

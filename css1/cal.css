@@ -223,88 +223,88 @@ Media Query
 
 /* tablet view */
 @media only screen and (min-width: 600px) {
-#results{
+    #results{
+            display: flex;
+            flex-grow: inherit;
+            flex-direction: column-reverse;
+    }
+    #cal-btn1{
+        position: inherit;
+        flex-flow: inherit;
         display: flex;
-        flex-grow: inherit;
-        flex-direction: column-reverse;
-}
-#cal-btn1{
-    position: inherit;
-    flex-flow: inherit;
-    display: flex;
-    margin: auto;
-    padding: 10px;
-}
+        margin: auto;
+        padding: 10px;
+    }
 }
 
-/* Descxktop view */
+/* desktop view */
 
 @media screen and (min-width: 800px) {
-.title {
-    font-size:  2.8em; 
-}
+    .title {
+        font-size:  2.8em; 
+    }
 
-main {
-    flex-direction: row;
-    border-radius: 100px  ;
+    main {
+        flex-direction: row;
+        border-radius: 100px  ;
 
-}
+    }
 
-p {
-    padding-top: 0;
-    font-size: 2em;
-    line-height: 1.2em;
-}
+    p {
+        padding-top: 0;
+        font-size: 2em;
+        line-height: 1.2em;
+    }
 
-aside {
-    float: right;
-    width: 28%;
-    margin: 1%;
-}
-.column {
-    width: 65%;
-    height: auto;
-    border-radius: 15px;
-}
-#results{
-    display: flex;
-    flex-grow: inherit;
-    flex-direction: column;
-}
-#cal-btn1{
-    display: none;
-    flex-direction: column;
-}
-#cal-btn2{
-    display: flex;
-    flex-direction: column;
-    height: 30%;
-}
+    aside {
+        float: right;
+        width: 28%;
+        margin: 1%;
+    }
+    .column {
+        width: 65%;
+        height: auto;
+        border-radius: 15px;
+    }
+    #results{
+        display: flex;
+        flex-grow: inherit;
+        flex-direction: column;
+    }
+    #cal-btn1{
+        display: none;
+        flex-direction: column;
+    }
+    #cal-btn2{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+    }
 
 
 /* navigation menu */
-#nav-menu {
-    display: flex;
-    flex-direction: row;
-}
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+    }
 
-#nav-menu li a {
-    max-width: 200px;
-    border-radius: 70% / 0 0 70% 70%;    
-    font-size: 1em;
-}
+    #nav-menu li a {
+        max-width: 200px;
+        border-radius: 70% / 0 0 70% 70%;    
+        font-size: 1em;
+    }
 
-#menu-container {
-    display: none;
-}
-/*footer*/
+    #menu-container {
+        display: none;
+    }
+    /*footer*/
 
-.media-title{
-    font-size:  2.18em ; 
-}
+    .media-title{
+        font-size:  2.18em ; 
+    }
 
-.media{
-    width: 10%;
-    height: auto;
-}
+    .media{
+        width: 10%;
+        height: auto;
+    }
 }
