@@ -72,7 +72,7 @@ actionButton.addEventListener("click", myFunction);
 var calculator;
 
 function openpicks() {
-    calculator = window.open("picks.html");
+    calculator = window.open("../picks.html");
    }
 
 function myFunction(){
