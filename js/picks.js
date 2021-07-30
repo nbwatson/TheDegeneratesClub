@@ -23,6 +23,7 @@ function showNavMenuOnClick() {
 //Calculator window 
 
 var calculator; 
+
 function openCalculator() {
    calculator = window.open("https://nbwatson.github.io/TheDegeneratesClub/cal.html");
   }
