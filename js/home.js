@@ -1,6 +1,6 @@
 
 // Finding navigation buttons
-const menuButton = document.getElementById('menu-container');
+const menuButton = document.getElementById('menu');
 const listItems = document.getElementById('list-items'); //entry point for list items
 const navMenu = document.getElementById('nav-menu');
 

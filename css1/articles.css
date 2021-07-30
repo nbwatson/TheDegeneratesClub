@@ -154,8 +154,7 @@ text-align:center;
 h3{
   font-size: 2.25rem;
   text-align: center;
-  padding: none;
-}
+  line-height: 1;}
 .column4{
   display: none;
 }

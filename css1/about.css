@@ -194,6 +194,7 @@ p {
   background-color: whitesmoke;
   flex-direction: column;
   text-align: center;
+  font-size: 2rem;
 }
 
 .tab-content h3{
@@ -395,7 +396,9 @@ Media Query
   .tab-content{
     padding: 20px;
     width: 100%;
-    animation: anime 1s;}
+    animation: anime 1s;
+    font-size: 1.5rem;
+  }
 
   .tab-content h3{
     font-size: 3em;
