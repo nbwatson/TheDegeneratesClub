@@ -29,3 +29,6 @@ function openCalculator() {
   function closeCalculator() {
     calculator.close();
   }
+
+
+
