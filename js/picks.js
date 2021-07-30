@@ -24,7 +24,7 @@ function showNavMenuOnClick() {
 
 var calculator; 
 function openCalculator() {
-   calculator = window.open("/Users/nickwatson/Documents/FinalProject/The-Degenerates-Club/cal.html");
+   calculator = window.open("/Users/nickwatson/Documents/FinalProject/The-Degenerates-Club/js/cal.js");
   }
   function closeCalculator() {
     calculator.close();
