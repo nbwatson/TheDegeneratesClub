@@ -181,7 +181,7 @@ footer {
   display: flex;
 }
 
-article{
+span{
   text-align: left;
   flex-direction: column;
   display: flex;
@@ -371,7 +371,7 @@ main {
 }
 /*footer*/
 
-article{
+span{
   font-size:  2.18em ; 
 }
 

@@ -9,8 +9,6 @@ box-sizing: border-box;
 }
 
 body {
-margin: 0;
-padding: 0;
 background-color: rgba(168, 170, 168, 0.582);
 /* background-color: rgb(219, 243, 219); -- old background 24Jul21 */
 display: flex;
@@ -94,19 +92,40 @@ margin-left: auto;
 /* main content area */
 
 main {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-flex-grow: 1;
-background-color: rgb(219, 243, 219);
-margin: 15px;
-padding: 10px 5% 10px;
-border: 4px black solid;
-border-radius: 100px  ;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    background-color: rgb(219, 243, 219);
+    margin: 15px;
+    padding: 10px 5% 10px;
+    border: 4px black solid;
+    border-radius: 100px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
+
+section {
+    width: 100%;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.section-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+}
 
 .column {
 width: 100%;
@@ -126,7 +145,13 @@ width: 100%;
 background-color: #caaeae;
 justify-content: start;
 align-items: center;
+}
 
+#column-2{
+border: 5px solid black;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
 }
 
 #blog-list{
@@ -169,6 +194,12 @@ width: inherit;
 
 .column2{
     border: 5px solid black;
+    background-color: cornflowerblue;
+}
+
+.t-list{
+    list-style-type: none;
+    padding: 0;
 }
 
 aside {
@@ -176,7 +207,7 @@ aside {
     padding: 10px 5% 10px;
     border-top: 20px solid #e99d7fa6;
     background: #a5f0ce;
-    margin: 2em;
+    margin: 2em 0;
 }
 h3{
     font-size: 2.5em;
@@ -210,7 +241,7 @@ footer {
     display: flex;
 }
 
-article{
+span{
     text-align: left;
     flex-direction: column;
     display: flex;
@@ -247,13 +278,42 @@ Media Query
 
 /* tablet view */
 @media only screen and (min-width: 600px) {
-#column2{
-    
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .section-1 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-right: 3px;
+        width: 50%;
+    }
+
+.section-2 {
+    display: flex;
+    margin-top: 10px;
+    width: 40%;
+    height: fit-content;
+    align-items: center;
+}
+.column2 {
+    border: 5px solid black;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+    list-style-type: none;
 }
 
 }
 
-/* Descxktop view */
+/* Desktop view */
 
 @media screen and (min-width: 800px) {
     .title {
@@ -295,7 +355,7 @@ p {
     }
     /*footer*/
 
-    article{
+    span{
         font-size:  2.18em ; 
     }
 

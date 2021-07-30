@@ -72,7 +72,7 @@ actionButton.addEventListener("click", myFunction);
 var calculator;
 
 function openpicks() {
-    calculator = window.open("/Users/nickwatson/Documents/FinalProject/The-Degenerates-Club/picks/picks.html");
+    calculator = window.open("/Users/nickwatson/Documents/FinalProject/The-Degenerates-Club/picks.html");
    }
 
 function myFunction(){

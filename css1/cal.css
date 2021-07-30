@@ -186,7 +186,7 @@ footer {
     display: flex;
 }
 
-article{
+.media-title{
     text-align: left;
     flex-direction: column;
     display: flex;
@@ -299,7 +299,7 @@ aside {
 }
 /*footer*/
 
-article{
+.media-title{
     font-size:  2.18em ; 
 }
 
