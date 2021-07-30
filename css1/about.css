@@ -11,12 +11,11 @@ html {
 body {
   background-color: rgba(168, 170, 168, 0.582);
   /* background-color: rgb(219, 243, 219); -- old background 24Jul21 */
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   font-family: Helvetica, Helvetica Neue, Arial;
   font-size: 1em;
   line-height: 26px;
+
 }
 
 
@@ -90,22 +89,30 @@ h1, h2{
   text-align: center;
 }
 
-main {
+main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 100%;
+  background: cadetblue;
+  margin: 10px;
+  border: solid 4px black;
+  flex-direction: row;
   justify-content: space-around;
-  flex-grow: 1;
-  background-color: rgb(219, 243, 219);
-  margin: 15px;
+  padding: 10px;
+
+
 }
 
-/*tab styling*/
-.container{
-  margin: 3%;
-  width: 105%;
-  padding: 10px 5% 10px;
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1;
 }
+/*area in flexbox*/
+
+/*tab styling*/
 
 .tab {
   overflow: hidden;
@@ -126,24 +133,55 @@ main {
 
 .tab-cont {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   padding: 10px 1.4%;
+  width: 100%;
   font-size: .8em;
   background-color: #caaeae;
   height: auto;
-  border-right: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;}
+
+.section.section{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+#column-2 {
+  width: 100%;
+}
+section.section-2 {
+  background: lightskyblue;
+  width: 100%;
+}
+
+ul.t-list1 {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+p {
+  text-align: center;
 }
 
 .tab-cont button{
-  width: 32%;
+  width: 33%;
   background-color: mintcream;
-  padding: 18px;
   font-size: 1.5em;
   font-weight: 400;
 }
 .tab-cont button:hover{
   background-color: rgba(185, 157, 218, 0.986);
+}
+
+.tab-cont .section {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
 }
 
 .tab button.active {
@@ -180,11 +218,8 @@ main {
 }
 
 button {
-  padding: 1rem;
-  background-color: #999;
   border: 2px solid;
-  border-radius: 0.3rem;
-}
+  border-radius: 0.3rem;}
 
 h3{
   font-size: 2.2em;
@@ -193,13 +228,23 @@ h3{
   margin: auto;
 }
 
-aside {
+#aside {
   color: rgb(3, 3, 3);
-  padding: 10px 5% 10px;
   border-top: 20px solid #e99d7fa6;
   background: #a5f0ce;
-  margin: 3%;
+  width: 100%;
 }
+
+ul#blog-list {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+}
+
 h4{
   font: 1.18em;
   text-align: center;
@@ -268,7 +313,27 @@ Clearfix
 /*************************
 Media Query
 *************************/
+/* Desktop view */
 
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+#column-2 {
+  width: 40%;
+  display: flex;
+  padding-right: 10px;
+}
+
+.aside {
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+}
 /* Descktop view */
 
 @media screen and (min-width: 800px) {
@@ -277,23 +342,26 @@ Media Query
 }
 
 main {
-    flex-direction: row;
+  align-items: center;
 }
-aside {
-    float: right;
-    width: 28%;
-  margin: 1%;
-  }
+#column-2 {
+  width: 40%;
+  display: flex;
+  padding-right: 10px;
+  height: 100%;
+}
+
 .column {
     width: 65%;
 }
 
 /* navigation menu */
   #nav-menu {
-  display: flex;
-  flex-direction: row;
-}
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
 #nav-menu li a {
   max-width: 200px;
   border-radius: 70% / 0 0 70% 70%;    
@@ -305,47 +373,28 @@ aside {
 }
 
 /* Tab Layout*/
+
 .container{
-  width: 70%;
-  margin: auto;
-  overflow:hidden;
-  border: 1px solid #d1d1d1;
-  height: auto;
-  margin-top: 20px;
-  margin-left: 1rem;
-  margin-bottom: 20px;
-  max-width: 700px;  
-  padding: 0;
+  flex-wrap: nowrap;
 }
-.tab-cont {
-  float: left;
-  width: 30%;
-  background-color: #caaeae;
-  height: 100%;
-  border-right: 1px solid #d1d1d1;
-  display: flex;
+
+.tab-cont .section {
+  justify-content: space-around;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 20px 1.4%;
-  font-size: .8em;
+  padding: 0px
 }
+
 .tab-cont button {
   width: 100%;
-  background-color: mintcream;
   padding: 18px;
-  font-size: 1.5em;
-  font-weight: 400;
 }
 .tab-cont button:hover { 
   background-color: rgba(185, 157, 218, 0.986);
 }
 .tab-content{
-  height: 100%;
-  float: left;
   padding: 20px;
-  width: 70%;
-  animation: anime 1s; 
-}
+  width: 100%;
+  animation: anime 1s;}
 
 .tab-content h3{
   font-size: 3em;

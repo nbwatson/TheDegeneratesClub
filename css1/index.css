@@ -38,7 +38,6 @@ body {
   font-family: Times, "Times New Roman", Georgia, serif;
   letter-spacing: .12em;
   line-height: normal;
-  max-width: 2500px;
 }
 
 h1, h2{
@@ -92,16 +91,16 @@ h1, h2{
 }
 
 
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   flex-grow: 1;
-  background-color: rgb(219, 243, 219);
+  background-color: cornflowerblue;
   margin-bottom: 15px;
-  padding: auto
-  ;
+  padding: auto;
 }
 
 
@@ -300,7 +299,6 @@ main {
   .box {
     width: 100%;
     display: flex;
-    max-width: 1000px;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
@@ -342,7 +340,6 @@ main {
 .box {
   width: 100%;
   display: flex;
-  max-width: 1000px;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
@@ -352,13 +349,18 @@ main {
 .hide{
   display: flex;
   justify-content: center;
+  margin: 0 auto;  
 }
 
 /* navigation menu */
   #nav-menu {
-  display: flex;
-  flex-direction: row;
-}
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
 
 #nav-menu li a {
   max-width: 200px;
